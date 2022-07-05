@@ -1,0 +1,383 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#header{
+    height: 100vh;
+    background-image:url(images/group-engineer.png);
+    background-position: top right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.header-text{
+    max-width: 350px;
+    margin-top: 100px;
+
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background:#f6ac27;
+    margin: 15px 0;
+}
+.common-btn{
+    padding: 18px 40px ;
+    background: #f6ac27 ;
+    outline: none;
+    border: 2px solid #f6ac27;
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    font-size: 15px;
+    line-height: 19px;
+    color: rgb(112, 112, 112);
+}
+h1{
+    font-size: 34px;
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.line1{
+    width: 15px;
+    height: 15px;
+    background: #f6ac27;
+    display: inline-block;
+}
+.line2{
+    width: 80px;
+    height: 1px;
+    background: #f6ac27;
+    display: inline-block;
+}
+.line3{
+    width: 60px;
+    height: 1px;
+    background: #f6ac27;
+    display: inline-block;
+}
+.line{
+    line-height: 8px;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: #f6ac27;
+    z-index: 2;
+    transition: 1s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+    background: #f6ac27;
+    border: none;
+    padding-bottom: 3px;
+    outline: none;
+    padding: 5px 0 10px;
+}
+
+.m1, .m2, .m3{
+    width: 20px;
+    height: 3px;
+    background: white;
+    display: inline-block;
+}
+
+.m2{
+    width: 12px;
+}
+
+@media(max-width:700px) {
+    #header{
+        background: none;
+    }
+    .container{
+        margin-right: 150px;
+        margin-left: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+    p{
+        font-size: 10px;
+
+    }
+    .common-btn{
+        padding: 10px 30px;
+    }
+    
+}
+/* about */
+#about,#offer{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.about-left-col{
+    flex-basis: 50%;
+
+}
+.about-left-col img{
+    width: 100%;
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+
+}
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+.about-text h3{
+   color: #797979;
+    font-size: 28px;
+    font-style: italic;
+}
+@media(max-width:700px){
+    .about-text h3{
+        font-size: 18px;
+
+    }
+    .about-text h2{
+        font-size: 18px;
+
+    }
+    #about,#offer{
+        
+        display: block;
+        align-items: center;
+        
+        
+    }
+    .about-text{
+        max-width: 500px;
+        margin-right: 10px;
+        display: inline-block;
+    
+    }
+    .about-right-col{
+        flex-basis: 100%;
+        text-align: left;
+        margin-left: 12px;
+    }
+    
+
+}
+/* features */
+#features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.feature-row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+    
+}
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.feature-btn{
+    margin: 80px auto 0 ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.feature-btn .line{
+    text-align: right;
+    display :inline-block;
+    margin-right: 25px;
+}
+@media(max-width:700px){
+    .feature-row{
+        width: 100%;
+        margin: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .feature-col{
+        flex-basis: 50%;
+        text-align: center;
+        margin: 20px auto;
+    }
+      
+
+}
+/* offer */
+#offer button{
+    margin: 30px 0;
+}
+
+/* contact */
+.contact-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact-left-col,.contact-right-col{
+    flex-basis: 50%;
+
+}
+.contact-right-col img{
+    width: 100%;
+}
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #f6ac27;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+@media(max-width:800px){
+    .contact-row{
+        display: block;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-left-col{
+        flex-basis: 100%;
+        text-align: left;
+        margin-left: 12px;
+        width: 100%;
+    }
+    .contact-right-col{
+        display: none;
+    }
+      
+
+}
+
+
+/* footer */
+#footer{
+   padding:  50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f6ac27;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+.footer-right-col{
+    flex-basis: 50%;
+}
+.footer-links{
+    display: flex;
+   
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-title h4{
+    color: #f6ac27;
+    margin-bottom: 20px;
+}
+.link-title small{
+    font-size: 13px;
+    color: #777;
+}
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 50px;
+
+}
+.footer-logo img{
+    width: 100px;
+
+}
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.footer-logo,.copyright-text{
+    flex-basis: 30%;
+}
+.copyright-text{
+   padding: 0 30px;
+}
